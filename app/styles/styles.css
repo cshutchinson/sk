@@ -3,6 +3,10 @@
   font-size: 10px;
 }
 
+.lastupdate {
+  color: green;
+}
+
 .rpdiv {
   height: 60%;
   overflow-x: hidden;
