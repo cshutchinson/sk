@@ -17,10 +17,12 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div className="row rowHeight">
+      <div className="row">
         <div className="col-sm-4">
           <h1 className="text-center">Price List</h1>
-          <PriceList priceData={this.state.data} />
+          <div className="rpdiv">
+            <PriceList priceData={this.state.data} />
+          </div>
         </div>
         <div className="col-sm-4">
 

@@ -40,9 +40,11 @@
     "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
+    "css-loader": "^0.23.1",
     "history": "^1.13.1",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
-    "react-router": "^1.0.1"
+    "react-router": "^1.0.1",
+    "style-loader": "^0.13.0"
   }
 }

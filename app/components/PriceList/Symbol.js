@@ -8,27 +8,12 @@ export default class Symbol extends Component {
 
   render(){
     return (
-      <li className='list-group-item'>
-        <div className="">
-          <div className="row">
-            <div className="col-sm-2">
-              {this.props.symbolData.symbol}
-            </div>
-            <div className="col-sm-9 col-sm-offset-1">
-              {this.props.symbolData.name}
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-sm-6">
-              Price: ${new Number(this.props.symbolData.current_price).toFixed(2)}
-            </div>
-            <div className="col-sm-6">
-              Volume: {this.props.symbolData.volume}
-            </div>
-          </div>
-        </div>
-      </li>
-
+      <tr>
+        <td>{this.props.symbolData.symbol}</td>
+        <td>{this.props.symbolData.name}</td>
+        <td className="text-right">${new Number(this.props.symbolData.current_price).toFixed(2)}</td>
+        <td className="text-right">{this.props.symbolData.volume}</td>
+      </tr>
     );
   }
 

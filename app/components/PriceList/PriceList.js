@@ -12,9 +12,11 @@ export default class PriceList extends Component {
       return <Symbol symbolData={symbol} key={index} />
     })
     return (
-      <ul className="list-group">
-        {symbols}
-      </ul>
+      <table className="table table-striped table-condensed pricedata">
+        <tbody>
+          {symbols}
+        </tbody>
+      </table>
     );
   }
 
