@@ -8,15 +8,20 @@ export default class PriceList extends Component {
   }
 
   render(){
+    let lastUpdate = new Date();
     let symbols = this.props.priceData.map((symbol, index)=>{
+      lastUpdate = (symbol.last_update);
       return <Symbol symbolData={symbol} key={index} />
     })
     return (
+      <div>
+        <p className="text-center">Last Price Update: {moment(lastUpdate).fromNow()}</p>
       <table className="table table-striped table-condensed pricedata">
         <tbody>
           {symbols}
         </tbody>
       </table>
+    </div>
     );
   }
 
