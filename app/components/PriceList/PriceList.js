@@ -16,7 +16,7 @@ export default class PriceList extends Component {
     return (
       <div>
         <p className="text-center lastupdate">Updated: {moment(lastUpdate).add(2,'hours').calendar()} EST</p>
-      <table className="table table-striped table-condensed pricedata">
+        <table className="table table-striped table-condensed pricedata">
         <tbody>
           {symbols}
         </tbody>
